@@ -41,9 +41,9 @@ const LeafletChoropleth = ({
                 keyboard: false,
             });
 
-            // L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-            //     attribution: 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
-            // }).addTo(map);
+            L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                attribution: 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+            }).addTo(map);
 
             const style = (feature) => ({
                 fillColor: getColor(feature),
